@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	while(true) {
+		var num=window.prompt("1~9 사이의 숫자를 한 개를 입력하세요..");
+		if(num<=9&&num>=1) {
+			document.writeln(num+"단입니다.<hr>");
+			for(let i=1;i<=9;i++){
+				document.writeln(num+"x"+i+"="+num*i+"<br>");
+			}
+			break;
+		}
+	}
+</script>
+</body>
+</html>
