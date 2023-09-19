@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script src="util.js"></script>
+<script>
+	write("자바스크립트 실습(4)", "h1");
+	function sum(n){
+		if(num==null||num==''){//if(!num)이렇게 해도됨
+			return;
+		}
+		else{
+			let sum=0;
+			for(let i=1;i<=num;i++){
+				sum+=i;
+			}
+			return sum;
+		}
+	}
+	var rand;
+	let num;
+	let t;
+	for(let i=0;i<5;i++){
+		rand= Math.random();
+		num=Math.floor(rand*6);
+		if(num!=0){
+			t=sum(num);
+		}else{
+			t=sum();
+		}
+		if(t==null){
+			write("결과값이 없어요!!","h3");
+		}
+		else{
+			write("호출 결과값: "+t, "h2");
+		}
+		
+	}
+</script>
+</body>
+</html>
